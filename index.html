@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shadab Farzeen – Google Business Profile & Local SEO Expert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Shadab Farzeen – Top-rated Google Business Profile & Local SEO Expert in India. 7+ years, 300+ clients, based in Hyderabad."
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ---------------------- */
+    /* Root + Global Styles   */
+    /* ---------------------- */
+
+    :root {
+      --bg-main: #04030a;
+      --bg-elevated: #070816;
+      --accent: #39bdf8;
+      --accent-soft: rgba(57, 189, 248, 0.25);
+      --accent-2: #a855ff;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --border-glass: rgba(148, 163, 184, 0.35);
+      --danger: #22c55e;
+      --radius-lg: 22px;
+      --radius-xl: 28px;
+      --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.8);
+      --shadow-glow: 0 0 40px rgba(56, 189, 248, 0.4);
+      --blur-glass: 22px;
+      --transition-fast: 160ms ease-out;
+      --transition-med: 260ms ease-out;
+      --section-gap: 5rem;
+      --container-width: 1200px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: radial-gradient(circle at top, #020617 0, #020617 35%, #000 100%);
+      color: var(--text-main);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Scrollbar (subtle) */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #020617;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--accent), var(--accent-2));
+      border-radius: 999px;
+    }
+
+    /* ---------------------- */
+    /* Layout & Reusable      */
+    /* ---------------------- */
+
+    .page-shell {
+      position: relative;
+      isolation: isolate;
+    }
+
+    .bg-orbit {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.65;
+      mix-blend-mode: screen;
+      z-index: -3;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.14), transparent 55%),
+        radial-gradient(circle at 80% 10%, rgba(168, 85, 247, 0.12), transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(45, 212, 191, 0.14), transparent 55%);
+    }
+
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -4;
+      opacity: 0.22;
+      background-image: linear-gradient(
+          rgba(148, 163, 184, 0.12) 1px,
+          transparent 1px
+        ),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(circle at top, black, transparent 70%);
+    }
+
+    .container {
+      width: min(var(--container-width), 100% - 2.5rem);
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-gap);
+      position: relative;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent));
+      opacity: 0.9;
+    }
+
+    .section-kicker {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .glass {
+      background: linear-gradient(
+        135deg,
+        rgba(15, 23, 42, 0.85),
+        rgba(15, 23, 42, 0.65)
+      );
+      backdrop-filter: blur(var(--blur-glass));
+      -webkit-backdrop-filter: blur(var(--blur-glass));
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-glass);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(
+        circle at top,
+        rgba(148, 163, 184, 0.16),
+        transparent 55%
+      );
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .glass-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      background: radial-gradient(
+        circle at top left,
+        rgba(148, 163, 184, 0.3),
+        transparent 60%
+      );
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: conic-gradient(
+        from 180deg,
+        var(--accent),
+        var(--accent-2),
+        var(--accent)
+      );
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+    }
+
+    .primary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.9rem;
+      border-radius: 999px;
+      background: radial-gradient(circle at top left, var(--accent-2), var(--accent));
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .primary-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .primary-btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.25), transparent 55%);
+      opacity: 0;
+      transition: opacity var(--transition-med);
+    }
+
+    .primary-btn:hover::before {
+      opacity: 1;
+    }
+
+    .primary-btn:hover {
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-1px);
+    }
+
+    .primary-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.9);
+    }
+
+    /* ---------------------- */
+    /* Header (minimal)       */
+    /* ---------------------- */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.96));
+      border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 0.75rem;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .brand-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: radial-gradient(circle at top left, var(--accent), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+    }
+
+    .brand-text-main {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #e5e7eb;
+      font-weight: 600;
+    }
+
+    .brand-text-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .header-phone {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-radius: 999px;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 1));
+    }
+
+    .header-phone strong {
+      color: #e5e7eb;
+      margin-left: 0.2rem;
+    }
+
+    /* ---------------------- */
+    /* Hero                   */
+    /* ---------------------- */
+
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-block: 3.75rem 4.75rem;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 60%);
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        gap: 2.75rem;
+      }
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-badge-row-right {
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .hero-rank-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(34, 197, 94, 0.6);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: #bbf7d0;
+      background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.18), transparent 70%);
+      box-shadow: 0 0 18px rgba(34, 197, 94, 0.45);
+    }
+
+    .hero-rank-pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: radial-gradient(circle, var(--danger), #22c55e);
+    }
+
+    .hero-headline {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: clamp(2.4rem, 3.7vw, 3.2rem);
+      line-height: 1.03;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin: 0 0 0.85rem;
+    }
+
+    .hero-headline span {
+      display: block;
+    }
+
+    .hero-headline-highlight {
+      background: linear-gradient(to right, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-tagline {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 24rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .hero-meta-item {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 1));
+    }
+
+    .hero-meta-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: radial-gradient(circle, var(--accent-2), var(--accent));
+    }
+
+    .hero-card-shell {
+      position: relative;
+      perspective: 1300px;
+    }
+
+    .hero-card {
+      padding: 1.4rem 1.4rem 1.25rem;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: radial-gradient(
+          circle at top left,
+          rgba(56, 189, 248, 0.18),
+          transparent 60%
+        ),
+        radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.96));
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle at top,
+        rgba(249, 250, 251, 0.08),
+        transparent 55%
+      );
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 1.15rem;
+    }
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    .hero-identity {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .hero-name {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .hero-avatar-frame {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      background: conic-gradient(
+        from 210deg,
+        rgba(56, 189, 248, 0.15),
+        rgba(168, 85, 247, 0.4),
+        rgba(56, 189, 248, 0.5)
+      );
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: radial-gradient(circle at top left, #020617, #020617);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .hero-metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      font-size: 0.7rem;
+    }
+
+    .hero-metric {
+      padding: 0.55rem 0.7rem;
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: linear-gradient(
+        135deg,
+        rgba(15, 23, 42, 0.8),
+        rgba(15, 23, 42, 0.95)
+      );
+      display: grid;
+      gap: 0.1rem;
+    }
+
+    .hero-metric-label {
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.65rem;
+    }
+
+    .hero-metric-value {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .hero-metric-highlight {
+      background: linear-gradient(to right, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-image-shell {
+      position: relative;
+      perspective: 1300px;
+    }
+
+    .hero-image-card {
+      border-radius: 26px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 60%),
+        radial-gradient(circle at bottom, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 1));
+      min-height: 260px;
+      max-height: 420px;
+      padding: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-image-placeholder {
+      flex: 1;
+      border-radius: 20px;
+      background-image: linear-gradient(
+          -45deg,
+          rgba(15, 23, 42, 0.95),
+          rgba(15, 23, 42, 0.9)
+        ),
+        linear-gradient(
+          120deg,
+          rgba(56, 189, 248, 0.1),
+          rgba(168, 85, 247, 0.08),
+          rgba(45, 212, 191, 0.12)
+        );
+      background-blend-mode: screen;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image-placeholder::before {
+      content: "Replace with your hero image / video frame";
+      position: absolute;
+      inset: 16px;
+      border-radius: 18px;
+      border: 1px dashed rgba(148, 163, 184, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.72rem;
+      color: rgba(148, 163, 184, 0.95);
+    }
+
+    .hero-image-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.7rem;
+      margin-top: 0.7rem;
+      font-size: 0.73rem;
+      color: var(--text-muted);
+    }
+
+    .hero-image-tag {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+    }
+
+    .hero-image-label {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: radial-gradient(
+        circle at top left,
+        rgba(15, 23, 42, 0.95),
+        rgba(15, 23, 42, 1)
+      );
+    }
+
+    /* ---------------------- */
+    /* Services               */
+    /* ---------------------- */
+
+    .services-grid {
+      display: grid;
+      gap: 1.6rem;
+    }
+
+    @media (min-width: 720px) {
+      .services-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1040px) {
+      .services-grid {
+        gap: 1.8rem;
+      }
+    }
+
+    .service-card {
+      position: relative;
+      border-radius: 22px;
+      padding: 0.8rem;
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 1));
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .service-media {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: radial-gradient(
+        circle at top left,
+        rgba(30, 64, 175, 0.2),
+        rgba(15, 23, 42, 0.98)
+      );
+    }
+
+    .service-media::before {
+      content: "Replace with service image";
+      position: absolute;
+      inset: 14px;
+      border-radius: 14px;
+      border: 1px dashed rgba(148, 163, 184, 0.8);
+      font-size: 0.7rem;
+      color: rgba(148, 163, 184, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .service-label {
+      margin-top: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.2rem;
+    }
+
+    .service-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 500;
+    }
+
+    .service-tag {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+    }
+
+    /* ---------------------- */
+    /* Clients                */
+    /* ---------------------- */
+
+    .clients-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .clients-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 980px) {
+      .clients-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    .client-card {
+      position: relative;
+      border-radius: 18px;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: radial-gradient(
+          circle at top left,
+          rgba(148, 163, 184, 0.14),
+          transparent 55%
+        ),
+        linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 1));
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+    }
+
+    .client-name {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+    }
+
+    .client-tagline {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .client-indicator {
+      width: 11px;
+      height: 11px;
+      border-radius: 999px;
+      background: radial-gradient(circle, var(--accent), var(--accent-2));
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.8);
+    }
+
+    /* ---------------------- */
+    /* Contact                */
+    /* ---------------------- */
+
+    .contact {
+      padding-block: 4rem 3.5rem;
+    }
+
+    .contact-card {
+      text-align: center;
+      padding: 2.2rem 1.6rem;
+      border-radius: 26px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: radial-gradient(
+          circle at 10% 0,
+          rgba(56, 189, 248, 0.15),
+          transparent 55%
+        ),
+        radial-gradient(circle at bottom, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 1));
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-heading {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 1.6rem;
+      color: #e5e7eb;
+    }
+
+    .contact-meta {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem 1.4rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .contact-meta span {
+      opacity: 0.95;
+    }
+
+    .contact-meta strong {
+      color: #e5e7eb;
+    }
+
+    /* ---------------------- */
+    /* Tilt & Motion          */
+    /* ---------------------- */
+
+    .tilt {
+      transform-style: preserve-3d;
+      transition:
+        transform 220ms cubic-bezier(0.23, 0.82, 0.28, 0.99),
+        box-shadow 220ms ease-out,
+        border-color 220ms ease-out,
+        background 220ms ease-out;
+      will-change: transform;
+    }
+
+    .tilt-floating {
+      transform-style: preserve-3d;
+      transition:
+        transform 260ms cubic-bezier(0.16, 0.68, 0.37, 0.99),
+        box-shadow 260ms ease-out;
+      will-change: transform;
+    }
+
+    /* Reveal on scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px) scale(0.98);
+      transition:
+        opacity 600ms ease-out,
+        transform 700ms cubic-bezier(0.16, 0.68, 0.37, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* ---------------------- */
+    /* Responsive tweaks      */
+    /* ---------------------- */
+
+    @media (max-width: 720px) {
+      .header-cta {
+        gap: 0.6rem;
+      }
+
+      .header-phone {
+        display: none;
+      }
+
+      .hero {
+        padding-block: 2.8rem 3.4rem;
+      }
+
+      .section {
+        padding-block: 3.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-orbit" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-mark">
+          <div class="brand-avatar">SF</div>
+          <div>
+            <div class="brand-text-main">Shadab&nbsp;Farzeen</div>
+            <div class="brand-text-sub">Google Business Profile · Local SEO</div>
+          </div>
+        </div>
+        <div class="header-cta">
+          <div class="header-phone">
+            Call
+            <strong>+91&nbsp;81253&nbsp;20728</strong>
+          </div>
+          <a href="#contact" class="primary-btn">
+            <span>Book Consultation</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <!-- Hero Content -->
+          <div class="hero-copy reveal">
+            <div class="hero-badge-row">
+              <div class="pill">
+                <span class="pill-dot"></span>
+                Local search visibility
+              </div>
+              <div class="hero-badge-row-right">
+                <div class="hero-rank-pill">
+                  <span class="hero-rank-pill-dot"></span>
+                  No.1 in Hyderabad
+                </div>
+              </div>
+            </div>
+
+            <h1 class="hero-headline">
+              <span>Google Business</span>
+              <span class="hero-headline-highlight">Profile & Local SEO</span>
+            </h1>
+
+            <p class="hero-tagline">
+              Shadab Farzeen elevates local brands to the top of Google Maps and search —
+              with precise, performance-led optimization.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="tel:+918125320728" class="primary-btn">
+                <span>Book Consultation</span>
+              </a>
+              <div class="hero-meta">
+                <div class="hero-meta-item">
+                  <span class="hero-meta-dot"></span>
+                  <span>Hyderabad · India</span>
+                </div>
+                <div class="hero-meta-item">
+                  <span class="hero-meta-dot"></span>
+                  <span>Top-rated Google Profile Expert in India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card-shell">
+              <!-- 3D Glassmorphic Identity Card -->
+              <div class="hero-card tilt" data-tilt>
+                <div class="hero-card-inner">
+                  <div class="hero-card-header">
+                    <div class="hero-identity">
+                      <div class="hero-name">Shadab&nbsp;Farzeen</div>
+                      <div class="hero-title">
+                        Google Business Profile &amp; Local SEO Expert
+                      </div>
+                    </div>
+                    <div class="hero-avatar-frame">
+                      <div class="hero-avatar-inner">
+                        SF
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hero-metric-row">
+                    <div class="hero-metric">
+                      <div class="hero-metric-label">Experience</div>
+                      <div class="hero-metric-value hero-metric-highlight">7+ Years</div>
+                      <div class="hero-metric-label">Since 2018</div>
+                    </div>
+                    <div class="hero-metric">
+                      <div class="hero-metric-label">Clients</div>
+                      <div class="hero-metric-value hero-metric-highlight">300+</div>
+                      <div class="hero-metric-label">Profiles managed</div>
+                    </div>
+                    <div class="hero-metric">
+                      <div class="hero-metric-label">Focus</div>
+                      <div class="hero-metric-value">Local Search</div>
+                      <div class="hero-metric-label">Maps · GBP · Reviews</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual / Image Placeholder -->
+          <div class="hero-image-shell reveal">
+            <div class="hero-image-card tilt" data-tilt>
+              <div class="hero-image-placeholder">
+  <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1600&auto=format&fit=crop" 
+       alt="Marketing Strategy Workstation - Local SEO">
+</div>
+
+
+              <div class="hero-image-meta">
+                <div class="hero-image-tag">
+                  Google Maps · Local Packs · Reputation
+                </div>
+                <div class="hero-image-label">
+                  Precision-built for local growth
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-title">Core Capabilities</div>
+            </div>
+            <div class="section-kicker">
+              High-impact, image-led services tailored for local dominance.
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service: Google Business Profile Setup -->
+            <article class="service-card tilt reveal" data-tilt>
+              <div class="service-media">
+                <!-- Replace with image:
+                <img src="images/service-gbp-setup.jpg" alt="Google Business Profile Setup">
+                -->
+              </div>
+              <div class="service-label">
+                <div class="service-title">
+                  Google Business Profile Setup
+                </div>
+                <div class="service-tag">Foundation</div>
+              </div>
+            </article>
+
+            <!-- Service: Local SEO Optimization -->
+            <article class="service-card tilt reveal" data-tilt>
+              <div class="service-media">
+                <!-- Replace with image:
+                <img src="images/service-local-seo.jpg" alt="Local SEO Optimization">
+                -->
+              </div>
+              <div class="service-label">
+                <div class="service-title">
+                  Local SEO Optimization
+                </div>
+                <div class="service-tag">Ranking</div>
+              </div>
+            </article>
+
+            <!-- Service: Smart Review Funnel -->
+            <article class="service-card tilt reveal" data-tilt>
+              <div class="service-media">
+                <!-- Replace with image:
+                <img src="images/service-review-funnel.jpg" alt="Smart Review Funnel">
+                -->
+              </div>
+              <div class="service-label">
+                <div class="service-title">
+                  Smart Review Funnel
+                </div>
+                <div class="service-tag">Reputation</div>
+              </div>
+            </article>
+
+            <!-- Service: 360° Virtual Tour -->
+            <article class="service-card tilt reveal" data-tilt>
+              <div class="service-media">
+                <!-- Replace with image:
+                <img src="images/service-360-tour.jpg" alt="360° Virtual Tour">
+                -->
+              </div>
+              <div class="service-label">
+                <div class="service-title">
+                  360° Virtual Tour
+                </div>
+                <div class="service-tag">Immersion</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients -->
+      <section class="section" id="clients">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-title">Selected Clients</div>
+            </div>
+            <div class="section-kicker">
+              Trusted across hospitality, beauty, education and lifestyle brands.
+            </div>
+          </div>
+
+          <div class="clients-grid">
+            <!-- Each card can be styled later with brand colours or logos -->
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">Pista House</div>
+                <div class="client-tagline">Restaurant · Local reach</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">Cream Stone</div>
+                <div class="client-tagline">QSR · Multi-location</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">Juice Salon</div>
+                <div class="client-tagline">Salon · Citywide discovery</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">UME</div>
+                <div class="client-tagline">Health · Visibility</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">Cloud9 Luxury Salon</div>
+                <div class="client-tagline">Premium · Positioning</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">Oakridge International School</div>
+                <div class="client-tagline">Education · Local search</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+
+            <div class="client-card tilt-floating reveal" data-tilt-small>
+              <div>
+                <div class="client-name">Café Niloufer</div>
+                <div class="client-tagline">Cafe · Maps prominence</div>
+              </div>
+              <div class="client-indicator"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-card reveal">
+            <div class="contact-label">Ready for local dominance?</div>
+            <div class="contact-heading">
+              One consultation to align your Google presence with your business ambition.
+            </div>
+
+            <a href="tel:+918125320728" class="primary-btn">
+              <span>Book Consultation</span>
+            </a>
+
+            <div class="contact-meta">
+              <span>
+                <strong>Phone</strong> · +91&nbsp;81253&nbsp;20728
+              </span>
+              <span>
+                <strong>Email</strong> ·
+                <a href="mailto:Shadab.farzeen@gmail.com">Shadab.farzeen@gmail.com</a>
+              </span>
+              <span>
+                <strong>Location</strong> · Hyderabad, India
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // -----------------------------
+    // 3D Tilt Interaction
+    // -----------------------------
+    (function () {
+      /**
+       * Applies 3D hover tilt to elements with [data-tilt] and subtle tilt to [data-tilt-small].
+       * No external libraries used.
+       */
+      const tiltElements = document.querySelectorAll("[data-tilt]");
+      const tiltSmallElements = document.querySelectorAll("[data-tilt-small]");
+
+      function handleTilt(event, element, intensity) {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        const rotateX = ((y - rect.height / 2) / rect.height) * -intensity;
+        const rotateY = ((x - rect.width / 2) / rect.width) * intensity;
+
+        element.style.transform =
+          "perspective(1200px) rotateX(" +
+          rotateX +
+          "deg) rotateY(" +
+          rotateY +
+          "deg) scale(1.05)";
+        element.style.boxShadow =
+          "0 26px 60px rgba(15, 23, 42, 0.9), 0 0 40px rgba(56, 189, 248, 0.4)";
+      }
+
+      function resetTilt(element) {
+        element.style.transform = "perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1)";
+        element.style.boxShadow = "";
+      }
+
+      tiltElements.forEach(function (el) {
+        el.addEventListener("mousemove", function (e) {
+          handleTilt(e, el, 14);
+        });
+        el.addEventListener("mouseleave", function () {
+          resetTilt(el);
+        });
+      });
+
+      tiltSmallElements.forEach(function (el) {
+        el.addEventListener("mousemove", function (e) {
+          handleTilt(e, el, 8);
+        });
+        el.addEventListener("mouseleave", function () {
+          resetTilt(el);
+        });
+      });
+
+      // On touch devices, keep subtle floating effect (no tilt).
+      if ("ontouchstart" in window) {
+        tiltElements.forEach(function (el) {
+          el.style.transform = "translateY(-4px)";
+        });
+        tiltSmallElements.forEach(function (el) {
+          el.style.transform = "translateY(-2px)";
+        });
+      }
+    })();
+
+    // -----------------------------
+    // Scroll-based Reveal
+    // -----------------------------
+    (function () {
+      const revealEls = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        revealEls.forEach(function (el) {
+          el.classList.add("visible");
+        });
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.18,
+        }
+      );
+
+      revealEls.forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
